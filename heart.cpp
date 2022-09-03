@@ -100,8 +100,8 @@ namespace Microbit {
 	{
 		uint8_t myBeat;
 		particleSensor->setPulseAmplitudeRed(0x0A);
-		particleSensor->safeCheck(100);
 		particleSensor->setPulseAmplitudeGreen(0);
+		particleSensor->safeCheck(100);
 		do
 		{
 			uint32_t irValue = particleSensor->getFIFOIR();
